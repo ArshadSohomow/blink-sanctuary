@@ -1,4 +1,4 @@
-import { memo, useMemo } from 'react';
+import { memo, useMemo, type ReactElement } from 'react';
 import type { Phase } from '../model/time';
 import { skyArc } from '../model/time';
 import { rng } from '../model/util';
@@ -56,7 +56,7 @@ export const Environment = memo(function Environment({ phase, dim }: { phase: Ph
 
 function treeline() {
   const r = rng(99);
-  const out: JSX.Element[] = [];
+  const out: ReactElement[] = [];
   let x = -20;
   while (x < 1460) {
     const h = 40 + r() * 70;
