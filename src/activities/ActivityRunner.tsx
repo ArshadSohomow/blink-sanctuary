@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ReactElement } from 'react';
 import type { ActivityRecord, ActivityType } from '../types';
 import { byId, type CatalogueItem } from '../content/catalogue';
 import { completeActivity, useStore } from '../state/store';
@@ -20,7 +20,7 @@ import { FocusFlow } from './FocusFlow';
 export interface FinishOpts { title?: string; durationSec?: number; reflection?: string; partial?: boolean; type?: ActivityType; startedAt?: number; nextHint?: string }
 export interface ActivityProps { item: CatalogueItem; params: URLSearchParams; finish: (o?: FinishOpts) => void; exit: () => void }
 
-const VIEWS: Record<string, (p: ActivityProps) => JSX.Element> = {
+const VIEWS: Record<string, (p: ActivityProps) => ReactElement> = {
   'breath-slow': Breathing, 'breath-box': Breathing, 'breath-exhale': Breathing, 'visual-rhythm': Breathing,
   grounding: Grounding, 'body-check': BodyCheck,
   'puzzle-sequence': SequencePuzzleView, 'puzzle-logic': LogicPuzzleView, 'puzzle-links': LinkPuzzleView,
