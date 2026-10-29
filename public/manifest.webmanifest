@@ -1,0 +1,10 @@
+{
+  "name": "Blink — Digital Sanctuary",
+  "short_name": "Blink",
+  "description": "Return to yourself. A digital sanctuary for attention and intentional living.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E9E2D5",
+  "theme_color": "#34483C",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
