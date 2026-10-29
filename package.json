@@ -1,9 +1,17 @@
 {
-  "name": "blink-digital-sanctuary",
+  "name": "blink-sanctuary",
   "version": "0.1.0",
   "private": true,
-  "description": "Blink — a digital sanctuary for attention and intentional living. Demo prototype.",
+  "description": "Blink — a digital sanctuary for restoring attention. Demo prototype.",
+  "homepage": "https://blink-4fd.pages.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArshadSohomow/blink-sanctuary.git"
+  },
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "node build.mjs --serve",
     "build": "node build.mjs",
@@ -14,6 +22,9 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "esbuild": "^0.28.0"
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.28.0",
+    "typescript": "^5.6.3"
   }
 }

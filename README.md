@@ -1,10 +1,17 @@
 # Blink — Digital Sanctuary (demo)
 
+**Live demo:** https://blink-4fd.pages.dev
+
 *Return to yourself.* A working prototype of Blink: the HOLD ritual, a living rock-stack sanctuary, short activities, focus sessions, a private journal, a gentle daily rhythm and a simulated check-in call.
 
 ## Run it
 
 Needs Node 18+.
+
+```bash
+git clone https://github.com/ArshadSohomow/blink-sanctuary.git
+cd blink-sanctuary
+```
 
 ```bash
 npm install
@@ -21,8 +28,8 @@ npm run build    # production build in dist/
 2. Name the project (e.g. `blink`) and drop in the contents of `dist/` (or `blink-dist.zip`).
 3. Deploy. `_headers` (security headers + caching) is applied automatically.
 
-**Option B: from a Git repo**
-Build command `npm run build`, output directory `dist`.
+**Option B: connect this GitHub repo (auto-deploys on every push)**
+Workers & Pages → Create → Pages → Connect to Git → choose `blink-sanctuary`. Framework preset: *None*. Build command `npm run build`, output directory `dist`.
 
 **Option C: Wrangler**
 `npx wrangler pages deploy dist --project-name blink`
